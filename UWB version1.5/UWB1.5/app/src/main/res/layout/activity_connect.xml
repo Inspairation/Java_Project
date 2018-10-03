@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="连接"
+        android:layout_width="match_parent"
+        android:id="@+id/bt_theme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="@dimen/theme"
+        android:gravity="center"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/text_state"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/connect_state"
+        android:layout_below="@+id/bt_theme"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectback"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="返回"
+        android:onClick="bt_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center|left"
+        android:layout_above="@+id/text_state"/>
+
+    <TextView
+        android:text="接收状态："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectstate"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/noconnectedlist"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/singledata"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/singledata"
+        android:layout_below="@+id/connectstate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bluetooth"
+        android:layout_below="@+id/text_state"
+        android:layout_alignLeft="@+id/connectback"
+        android:layout_alignStart="@+id/connectback"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/connecttodata"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginTop="11dp"
+        android:text="数据"/>
+
+    <Button
+        android:id="@+id/connecttopicture"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:text="图像生成"/>
+
+</RelativeLayout>

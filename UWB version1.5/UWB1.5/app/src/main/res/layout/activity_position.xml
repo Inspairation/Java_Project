@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="模拟定位"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/bt_theme"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20dp"/>
+
+        <Button
+            android:text="返回"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/positionback"
+            android:layout_weight="1"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:onClick="bt_databack"
+            android:gravity="center|left"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignBottom="@+id/bt_theme"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/datatext"
+            android:layout_height="350dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+</LinearLayout>

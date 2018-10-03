@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+    <TextView
+        android:text="创建数据存储文件"
+        android:layout_width="match_parent"
+        android:id="@+id/bt_theme"
+        android:gravity="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20dp"
+        android:layout_height="60dp"/>
+    <EditText
+        android:id="@+id/et_pathName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入文件夹名" />
+
+    <EditText
+        android:id="@+id/et_fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入文件名" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入内容" />
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="创建" />
+
+</LinearLayout>
